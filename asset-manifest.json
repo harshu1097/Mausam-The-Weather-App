@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mausam-the-weather-app/static/css/main.21cb5129.css",
+    "main.js": "/mausam-the-weather-app/static/js/main.4d9c3001.js",
+    "static/media/winter.jpg": "/mausam-the-weather-app/static/media/winter.1beb99a2515048cf50b3.jpg",
+    "static/media/Summer.jpg": "/mausam-the-weather-app/static/media/Summer.8fbf08863ff754bc4dcb.jpg",
+    "index.html": "/mausam-the-weather-app/index.html",
+    "main.21cb5129.css.map": "/mausam-the-weather-app/static/css/main.21cb5129.css.map",
+    "main.4d9c3001.js.map": "/mausam-the-weather-app/static/js/main.4d9c3001.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21cb5129.css",
+    "static/js/main.4d9c3001.js"
+  ]
+}
