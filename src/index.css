@@ -1,25 +1,29 @@
-:root{
-    --section-overlay: rgba(0,0,0,0.7);
-    --background-overlay: rgba(0,0,0,0.2);
+:root {
+    --section-overlay: rgba(0, 0, 0, 0.7);
+    --background-overlay: rgba(0, 0, 0, 0.2);
 }
-*{
+
+* {
     margin: 0;
-    /* padding: 0; */
+    padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.app{
+
+.app {
     width: 100%;
     height: 100vh;
     background-position: center;
     background-size: cover;
 }
-.overlay{
+
+.overlay {
     width: 100%;
     height: 100vh;
     background-color: var(--background-overlay);
 }
-.container{
+
+.container {
     max-width: 800px;
     margin: auto;
     height: 100%;
@@ -30,54 +34,103 @@
     flex-direction: column;
     padding: 1rem;
 }
+
 /* top */
-.section{
+.section {
     width: 100%;
     padding: 1rem;
     border-radius: 0.4rem;
     color: white;
 }
-.section__inputs, .section__temperature{
+
+.section__inputs,
+.section__temperature {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--section-overlay);
+    flex-wrap: wrap;
+    /* Allow elements to wrap to the next line on smaller screens */
 }
-.section__inputs>input{
+
+.section__inputs>input {
     border: 0.8px solid white;
     border-radius: 0.6rem;
     background-color: transparent;
     color: white;
     padding: 0.5rem;
-    font-size: 20px;
+    font-size: 18px;
+    /* Adjust font size for smaller screens */
     font-weight: 200;
+    flex: 1;
+    /* Allow inputs to expand to fill available space */
 }
-.section__inputs>input:focus{
+
+.section__inputs>input:focus {
     outline: none;
 }
-.section__inputs>button{
-    padding: 10px 50px;
+
+.section__inputs>button {
+    padding: 8px 30px;
+    /* Adjust button padding for smaller screens */
     border: none;
     border-radius: 00.4rem;
-    font-size: 20px;
+    font-size: 18px;
+    /* Adjust font size for smaller screens */
     font-weight: 500;
     background-color: white;
+    flex: 0;
+    /* Prevent buttons from expanding to fill available space */
+    margin-top: 0rem;
+    /* Add a margin to buttons on smaller screens */
 }
-.section__inputs>button:hover{
+
+.section__inputs>button:hover {
     cursor: pointer;
-    background-color: lightgray;
+    background-color: rgb(255, 216, 244);
 }
-.Icon{
+
+.Icon {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.Icon>h3{
-    font-size: 15px;
+
+.Icon>h3 {
+    font-size: 14px;
+    /* Adjust font size for smaller screens */
     font-weight: 200;
     text-transform: capitalize;
 }
+
 .temperature>h1 {
-        font-size: 60px;
+    font-size: 48px;
+    /* Adjust font size for smaller screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .section__inputs>input {
+        font-size: 16px;
+        /* Further adjust font size for very small screens */
+    }
+
+    .section__inputs>button {
+        padding: 6px 20px;
+        /* Further adjust button padding for very small screens */
+    }
+}
+
+/* Media query for iPhone SE and other smaller devices */
+@media (max-width: 414px) {
+    .section__inputs>input {
+        font-size: 14px;
+        /* Even smaller font size for iPhone SE */
+    }
+
+    .section__inputs>button {
+        padding: 4px 15px;
+        /* Even smaller button padding for iPhone SE */
+    }
 }

@@ -3,7 +3,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +14,8 @@
     padding: 1rem;
     border-radius: 0.4rem;
 }
-.desciption__card-Icon{
+
+.desciption__card-Icon {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -22,12 +24,14 @@
     gap: 5px;
     margin-bottom: 12px;
 }
-.desciption__card-Icon>small{
+
+.desciption__card-Icon>small {
     text-transform: capitalize;
 }
-@media screen  and (max-width: 1024px) {
-        .section__description{
-                grid-template-columns: 1fr 1fr;
-            
-        }
+
+@media screen and (max-width: 1024px) {
+    .section__description {
+        grid-template-columns: 1fr 1fr;
+
+    }
 }
